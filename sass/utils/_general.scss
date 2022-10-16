@@ -1,0 +1,19 @@
+body {
+  font-family: var(--primary-font-family), sans-serif;
+  background-color: var(--main-bg-color);
+  letter-spacing: var(--primary-letter-spacing);
+}
+
+.section {
+  padding: 94px 0;
+
+  &-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.17;
+  }
+}
+
+
