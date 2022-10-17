@@ -23,47 +23,107 @@
 
   <body>
     <header class="header">
-      <div class="container menu">
+      <div class="container header__wrap">
         <a href="./index.html" class="logo no-decoration">
           <span class="logo__accent">Web</span>Studio
         </a>
-        <nav>
-          <ul class="menu__list style-none">
-            <li class="menu__item">
-              <a class="menu__link current no-decoration" href="./index.html">Студія</a>
+        <div class="menu">
+          <nav class="menu__nav">
+            <ul class="menu__list style-none">
+              <li class="menu__item">
+                <a class="menu__link current no-decoration" href="./index.html">Студія</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link no-decoration" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link no-decoration" href="#contacts">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="communication style-none">
+            <li class="communication__item">
+              <a
+                class="communication__link no-decoration"
+                href="mailto:info@devstudio.com"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+              >
+                <svg width="16" height="12" class="communication__icon">
+                  <use href="./images/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="menu__item">
-              <a class="menu__link no-decoration" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link no-decoration" href="#contacts">Контакти</a>
+            <li class="communication__item">
+              <a class="communication__link no-decoration" href="tel:+380961111111">
+                <svg width="10" height="16" class="communication__icon">
+                  <use href="./images/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="communication style-none">
-          <li class="communication__item">
-            <a
-              class="communication__link no-decoration"
-              href="mailto:info@devstudio.com"
-              rel="noopener noreferrer nofollow"
-              target="_blank"
-            >
-              <svg width="16" height="12" class="communication__icon">
-                <use href="./images/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="communication__item">
-            <a class="communication__link no-decoration" href="tel:+380961111111">
-              <svg width="10" height="16" class="communication__icon">
-                <use href="./images/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
+        <div class="hamburger">
+          <svg width="40" height="40" class="hamburger__menu">
+            <use href="./images/sprite.svg#hamburger-menu"
+          </svg>
+        </div>        
       </div>
+      <div class="mobile js-menu-container is-hidden">
+          <button class="mobile__button js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+          <nav class="menu__nav">
+            <ul class="menu__list style-none">
+              <li class="menu__item">
+                <a class="menu__link current no-decoration" href="./index.html">Студія</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link no-decoration" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link no-decoration" href="#contacts">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="communication style-none">
+            <li class="communication__item">
+              <a
+                class="communication__link no-decoration"
+                href="mailto:info@devstudio.com"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+              >
+                <svg width="16" height="12" class="communication__icon">
+                  <use href="./images/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="communication__item">
+              <a class="communication__link no-decoration" href="tel:+380961111111">
+                <svg width="10" height="16" class="communication__icon">
+                  <use href="./images/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
     </header>
     <main>
       <!-- Hero section -->
@@ -431,35 +491,35 @@
         <div class="follow">
           <p class="follow__title"><strong>Приєднуйтесь</strong></p>
           <ul class="socials style-none">
-                  <li class="socials__item">
-                    <a href="" class="socials__links footer-socials-link">
-                      <svg width="20" height="20" class="socials__icon">
-                        <use href="./images/sprite.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials__item">
-                    <a href="" class="socials__links footer-socials-link">
-                      <svg width="20" height="20" class="socials__icon">
-                        <use href="./images/sprite.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials__item">
-                    <a href="" class="socials__links footer-socials-link">
-                      <svg width="20" height="20" class="socials__icon">
-                        <use href="./images/sprite.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials__item">
-                    <a href="" class="socials__links footer-socials-link">
-                      <svg width="20" height="20" class="socials__icon">
-                        <use href="./images/sprite.svg#linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+            <li class="socials__item">
+              <a href="" class="socials__links footer-socials-link">
+                <svg width="20" height="20" class="socials__icon">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="socials__links footer-socials-link">
+                <svg width="20" height="20" class="socials__icon">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="socials__links footer-socials-link">
+                <svg width="20" height="20" class="socials__icon">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="socials__links footer-socials-link">
+                <svg width="20" height="20" class="socials__icon">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="mailing">
           <p class="mailing__title"><strong>Підпишіться на розсилку</strong></p>
