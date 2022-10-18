@@ -5,15 +5,27 @@ body {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @include desktop {
+    padding: 94px 0;
+  }
 
   &-title {
     margin-bottom: 50px;
     font-weight: 700;
-    font-size: 36px;
+   font-size: 28px;
     text-align: center;
-    line-height: 1.17;
+    line-height: 1.18;
+
+    @include desktop {
+        font-size: 36px;
+    }
   }
 }
 
-
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

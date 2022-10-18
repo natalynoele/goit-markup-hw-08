@@ -1,0 +1,15 @@
+.hamburger {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.mobile {
+  position: absolute;
+  @include tablet {
+    display: none;
+  }
+}
