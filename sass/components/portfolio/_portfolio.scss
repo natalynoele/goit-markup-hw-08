@@ -8,27 +8,31 @@
   }
 
   &__item {
-    @media screen and (max-width: 767px) {
-      &:not(:last-child) {
-        margin-bottom: 30px;
-      }
-    }
-    @include tablet {
-      flex-basis: calc((100% - 30px) / 2);      
-      
-    }
-    @include desktop {
-      flex-basis: calc((100% - 2* 30px) / 3);
-    }
-  }
-
-  &__links {
+    border-bottom: 1px solid var(--primary-border-color);
+    border-right: 1px solid var(--primary-border-color);
+    border-left: 1px solid var(--primary-border-color);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @include tablet {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+      flex-basis: calc((100% - 2 * 30px) / 3);
+    }
+  }
+
+  &__links {
+    
+    
 
     &:hover .portfolio__details,
     &:focus .portfolio__details {
@@ -53,7 +57,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    padding: 63px 24px;
+    padding: 35px 24px;
 
     color: var(--secondary-title-color);
     background-color: rgba(33, 150, 243, 0.9);
@@ -79,9 +83,6 @@
 
     &__wrap {
       padding: 20px 24px;
-      border-bottom: 1px solid var(--primary-border-color);
-      border-right: 1px solid var(--primary-border-color);
-      border-left: 1px solid var(--primary-border-color);
     }
   }
 
