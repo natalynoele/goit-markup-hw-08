@@ -1,17 +1,28 @@
 .portfolio {
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
   }
 
   &__item {
-    flex-basis: calc((100% - 60px) / 3);
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @include tablet {
+      flex-basis: calc((100% - 30px) / 2);      
+      
+    }
+    @include desktop {
+      flex-basis: calc((100% - 2* 30px) / 3);
+    }
   }
 
   &__links {
-    display: flex;
-    flex-direction: column;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
@@ -23,6 +34,10 @@
     &:focus .portfolio__details {
       opacity: 1;
       transform: translateY(0);
+    }
+    @include tablet {
+      display: flex;
+      flex-direction: column;
     }
   }
   &__thumbs {

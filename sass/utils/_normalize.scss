@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 h1,
 h2,
 h3,
@@ -21,6 +24,7 @@ li {
 
 button {
     border: none;
+    background-color: transparent;
 }
 
 textarea {
