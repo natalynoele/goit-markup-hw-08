@@ -10,9 +10,12 @@
     mobileMenu.classList.toggle('is-open');
 
     if (!isMenuOpen) {
-     body.classList.add('no-scroll');    
+      body.classList.add('no-scroll');       
+      mobileMenu.classList.remove('anim-mod');
     } else {
-      body.classList.remove('no-scroll');  
+      body.classList.remove('no-scroll');
+      
+      mobileMenu.classList.add('anim-mod');
     }
    
   };
@@ -25,6 +28,7 @@
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
+     mobileMenu.classList.remove('anim-mod');
+    // bodyScrollLock.enableBodyScroll(document.body);
   });
 })();

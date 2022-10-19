@@ -27,8 +27,8 @@
         <a href="./index.html" class="logo no-decoration">
           <span class="logo__accent">Web</span>Studio
         </a>
-        <!-- is-hidden -->
-         <div class="menu js-menu-container">
+
+        <div class="menu js-menu-container">
           <nav class="menu__nav">
             <ul class="menu__list style-none">
               <li class="menu__item">
@@ -52,11 +52,10 @@
                   target="_blank"
                 >
                   <svg width="16" height="12" class="communication__icon envelope">
-                    <use href="./images/sprite.svg#envelope"></use>                    
+                    <use href="./images/sprite.svg#envelope"></use>
                   </svg>
                   <span>info@devstudio.com</span>
-                  </a
-                >
+                </a>
               </li>
               <li class="communication__item">
                 <a class="communication__link phone no-decoration" href="tel:+380961111111">
@@ -64,8 +63,7 @@
                     <use href="./images/sprite.svg#smartphone"></use>
                   </svg>
                   <span>+38 096 111 11 11</span>
-                  </a
-                >
+                </a>
               </li>
             </ul>
             <ul class="social style-none">
@@ -84,18 +82,22 @@
             </ul>
           </div>
           <button type="button" class="menu__close js-close-menu">
-            <svg width="19" height="19" viewBox="0 0 19 19"class="menu__close__icon">
+            <svg width="19" height="19" viewBox="0 0 19 19" class="menu__close__icon">
               <use href="./images/sprite.svg#close-black-18dp"></use>
             </svg>
           </button>
         </div>
-        <button type="button" class="menu__toggle js-open-menu" aria-expanded="false"
-          aria-controls="mobile-menu">
-          <svg width="40" height="40" viewBox="0 0 40 40"class="toggle__hamburger">
+        <button
+          type="button"
+          class="menu__toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" viewBox="0 0 40 40" class="toggle__hamburger">
             <use href="./images/sprite.svg#hamburger-menu"></use>
           </svg>
         </button>
-      </div> 
+      </div>
     </header>
     <main>
       <!-- Hero section -->
@@ -163,33 +165,30 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="works__list style-none">
             <li class="works__item">
-              <img
-                class="works__img full-width"
-                src="./images/programer-working-his-desk-office.jpg"
-                alt="програміст праціює за робочим столом"
-                width="370"
-                height="294"
-              />
+              <img class="team__img loading="lazy" srcset="
+              ./images/works/programer-working-his-desk-office-370.jpg 370w,
+              ./images/works/programer-working-his-desk-office-740.jpg 740w "
+              src="./images/team/designer-270" alt="програміст праціює за робочим столом"
+              sizes="(min-width: 1200) 33vw" />
+
               <h3 class="works__title">Десктопні додатки</h3>
             </li>
             <li class="works__item">
-              <img
-                class="works__img full-width"
-                src="./images/designers-are-developing-application.jpg"
-                alt="дизайнери розробляють додаток для смартфонів команда працює над інтерфейсом мобільних телефонів"
-                width="370"
-                height="294"
-              />
+              <img class="team__img loading="lazy" srcset="
+              ./images/works/designers-are-developing-application-370.jpg 370w,
+              ./images/works/designers-are-developing-application-740.jpg 740w "
+              src="./images/team/designer-270" alt="дизайнери розробляють додаток для смартфонів
+              команда працює над інтерфейсом мобільних телефонів" sizes="(min-width: 1200) 33vw" />
+
               <h3 class="works__title">Мобільні додатки</h3>
             </li>
             <li class="works__item">
-              <img
-                class="works__img full-width"
-                src="./images/creative-artist-web-design.jpg"
-                alt="креативний веб дизайнер обирає кольори на графічному планшеті"
-                width="370"
-                height="294"
-              />
+              <img class="team__img loading="lazy" srcset="
+              ./images/works/creative-artist-web-design-370.jpg 370w,
+              ./images/works/creative-artist-web-design-740.jpg 740w "
+              src="./images/team/designer-270" alt="креативний веб дизайнер обирає кольори на
+              графічному планшеті" sizes="(min-width: 1200) 33vw" />
+
               <h3 class="works__title">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -504,7 +503,7 @@
       </div>
     </footer>
     <!-- Modal -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close" data-modal-close>
           <svg class="modal__icon" width="18" height="18">
@@ -562,8 +561,8 @@
           <button type="submit" class="form__btn">Відправити</button>
         </form>
       </div>
-    </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
-      <script src="./js/mobile-menu.js"></script>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
