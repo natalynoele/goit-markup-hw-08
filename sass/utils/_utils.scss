@@ -1,31 +1,29 @@
 .container {
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    @include mobile {
-        width: 480px;
-    }
-
-    @include tablet {
-        width: 768px;
-    }
-
-    @include desktop {
-        width: 1200px;
-    }
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100;
+  @include desktop {
+    max-width: 1200px;
+  }
+  @include tablet {
+    max-width: 768px;
+  }
+  @include mobile {
+    max-width: 480px;
+  }
 }
 
 .no-decoration {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .style-none {
-    list-style: none;
+  list-style: none;
 }
 
 .cursor {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .is-hidden {
