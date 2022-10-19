@@ -29,7 +29,7 @@
     background-color: white;
     visibility: hidden;
     transform: translateX(100%);
-     transition: transform 0.5s;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &__item {
       &:not(:last-child) {
@@ -99,11 +99,10 @@
     @include tablet {
       display: none;
     }
-    &:hover ,
+    &:hover,
     &:focus {
       color: var(--accent-color);
-    }    
-    
+    }
   }
   .toggle__hamburger {
     fill: currentColor;
@@ -179,9 +178,7 @@
     @include mob-max-width {
       font-size: 24px;
     }
-    @include desktop {
-      @include flex-center();
-    }
+    @include flex-center(left, left);
 
     color: var(--header-contact-link);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -199,6 +196,16 @@
     }
   }
 
+  &__icon {
+    @include mob-max-width {
+      display: none;
+    }
+    fill: currentColor;
+    margin-right: 8px;
+    @include desktop {
+      margin-right: 10px;
+    }
+  }
   .phone {
     @include mob-max-width {
       color: var(--accent-color);
@@ -209,14 +216,16 @@
       font-size: 27px;
     }
   }
+}
 
-  &__icon {
-    @include mob-max-width {
-      display: none;
-    }
-    margin-right: 10px;
-    fill: currentColor;
-   
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .envelope {
+    width: 14px;
+    height: 10px;
+  }
+  .smartphone {
+    width: 10px;
+    height: 14px;
   }
 }
 
@@ -254,6 +263,5 @@
 .is-open {
   transform: translateX(0);
   visibility: visible;
-   
-   
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -175,7 +175,7 @@ img {
     background-color: white;
     visibility: hidden;
     transform: translateX(100%);
-    transition: transform 0.5s;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .menu__item:not(:last-child) {
     margin-bottom: 32px;
@@ -320,6 +320,9 @@ img {
   }
 }
 .communication__link {
+  display: flex;
+  justify-content: left;
+  align-items: left;
   color: var(--header-contact-link);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
@@ -332,19 +335,26 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .communication__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .communication__link {
     padding: 32px 20px;
     font-size: 14px;
   }
 }
 .communication__link:hover, .communication__link:focus {
   color: var(--accent-color);
+}
+.communication__icon {
+  fill: currentColor;
+  margin-right: 8px;
+}
+@media screen and (max-width: 767px) {
+  .communication__icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .communication__icon {
+    margin-right: 10px;
+  }
 }
 @media screen and (max-width: 767px) {
   .communication .phone {
@@ -358,16 +368,17 @@ img {
     font-size: 27px;
   }
 }
-.communication__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-@media screen and (max-width: 767px) {
-  .communication__icon {
-    display: none;
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .envelope {
+    width: 14px;
+    height: 10px;
+  }
+  .smartphone {
+    width: 10px;
+    height: 14px;
   }
 }
-
 .social {
   display: flex;
   justify-content: flex-start;
@@ -403,6 +414,7 @@ img {
 .is-open {
   transform: translateX(0);
   visibility: visible;
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
