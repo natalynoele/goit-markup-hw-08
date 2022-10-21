@@ -9,7 +9,7 @@
     text-align: center;
   }
   
-  @include desktop {
+  @include tablet {
     display: flex;
     align-items: baseline;
   }
@@ -19,6 +19,7 @@
   @include tablet {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
   }
 }
 
