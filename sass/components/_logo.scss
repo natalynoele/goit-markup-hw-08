@@ -9,4 +9,8 @@
   &__accent {
     color: var(--accent-color);
   } 
+
+  @include desktop {
+    margin-right: 90px;
+  }
 }
