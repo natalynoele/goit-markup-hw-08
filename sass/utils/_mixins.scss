@@ -24,7 +24,18 @@
 }
 
 @mixin mob-max-width {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+@mixin tab-max-width {
+   @media screen and (min-width: 577px) and (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin desk-min-width {
+   @media screen and (min-width: 961px) {
     @content;
   }
 }
